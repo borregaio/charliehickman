@@ -1,0 +1,96 @@
+body {
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1); 
+    /* The image used for background*/
+    background-size: cover;
+    background-position: 50% 30%;
+    /* Resize the background image to cover the entire container */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image-container {
+    text-align: center;
+    width: 100%;
+}
+
+h4 {
+    padding: 20px 0;
+}
+
+.emailme:hover span {
+    display: none;
+}
+
+.emailme:hover:before {
+    content: "hickchar96@gmail.com";
+}
+
+.callme:hover span {
+    display: none;
+}
+
+.callme:hover:before {
+    content: "07495359929";
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container a {
+    margin-bottom: 20px;
+}
+
+.link {
+    min-width: 50% !important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .link {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+.w3-purple,
+.w3-hover-purple:hover {
+    color: #fff !important;
+    background-color: rgba(156, 39, 176, 0.6) !important;
+}
